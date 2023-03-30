@@ -1,5 +1,5 @@
 # dbt-intro
-A collection of cool DBT examples showcasing its data transformation superpowers.
+A collection of DBT examples showcasing its data transformation superpowers.
 
 
 ### These models have been developed for educational purposes. A more detailed description can be found below.
