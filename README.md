@@ -2,7 +2,7 @@
 A collection of cool DBT examples showcasing its data transformation superpowers.
 
 
-## These models have been developed for educational purposes. A more detailed description can be found below.
+### These models have been developed for educational purposes. A more detailed description can be found below.
 
 NOTE: `{{ config(materialized='table') }}`: This part is a DBT configuration block that sets the materialization of the model to 'table'. Materialization in DBT determines how the output of the SQL query should be stored. In this case, it tells DBT to create a table with the results of the SQL query.
 
