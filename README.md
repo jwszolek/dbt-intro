@@ -10,7 +10,7 @@ NOTE: `{{ config(materialized='table') }}`: This part is a DBT configuration blo
 
 2. silver_users_cities_join.sql - Selects the name and user_id columns from the silver_cities_case table (aliased as cc) in the airbyte schema. Joins the silver_cities_case table with the bronze_users table (aliased as bu) in the airbyte schema, based on the condition that the user_id values in both tables match.
 
-3. silver_cities_limit.sql - 
+3. silver_cities_limit.sql - {% set user_ids = (20, 2, 19) %}: This line declares a Jinja2 variable named user_ids and assigns a tuple containing three integers (20, 2, and 19) to it. Selects the id, name, and user_id columns from the table referenced by the silver_cities model (using {{ ref('silver_cities') }}). Filters the results by including only rows where the user_id value is in the tuple of user IDs defined earlier ((20, 2, 19)). Orders the result set by the id column in ascending order.
 
 4. silver_cities_case.sql - 
 
